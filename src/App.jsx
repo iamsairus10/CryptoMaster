@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 
 const App = () =>{
     return<div className="container">
+        <React.StrictMode>
+
         <WatchListContextProvider>
         <BrowserRouter>
         <Header/>
@@ -19,6 +21,7 @@ const App = () =>{
         
         </WatchListContextProvider>
         <Footer/>
+        </React.StrictMode>
     </div>;
 };
 
