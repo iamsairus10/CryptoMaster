@@ -14,7 +14,7 @@ const App = () =>{
         <WatchListContextProvider>
         <BrowserRouter>
         <Header/>
-        <Route exact path="/" component={CoinSummaryPage} />
+        <Route exact path={`${process.env.PUBLIC_URL}/`} component={CoinSummaryPage} />
         
           
         </BrowserRouter>
