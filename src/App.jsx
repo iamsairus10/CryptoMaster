@@ -15,7 +15,11 @@ const App = () =>{
         <BrowserRouter>
         <Header/>
         <Route exact path={`${process.env.PUBLIC_URL}/`} component={CoinSummaryPage} />
-        
+        <Route path={`${process.env.PUBLIC_URL}/coins/:id`} component={CoinDetailPage} /> 
+
+        <Route exact path="/" component={CoinSummaryPage} />
+        <Route path="/coins/:id" component={CoinDetailPage} />
+
           
         </BrowserRouter>
         
